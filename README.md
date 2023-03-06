@@ -88,3 +88,63 @@ public class Main {
     }
 }
 ```
+
+### Welcome для студентов через for.
+```
+import java.util.Scanner;
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for(int i = 0; i<n; i++ ){
+            System.out.println("Welcome");
+        }
+    }
+}
+```
+
+### ВВод пароля do while
+```
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int password;
+        do {
+            System.out.println("Введите правильный пароль");
+            password= read.nextInt();
+        } while (password!=8819);
+        }
+
+    }
+
+```
+
+### Калькулятор кредитов for.     
+```
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        //your code goes here
+
+        int persent;
+        int payment;
+        for (int i = 0 ; i < 3; i++) {
+            persent = amount * 10 /100;
+            payment = amount - persent;
+            amount = payment;
+        }
+        System.out.println(amount);
+
+    }
+}
+
+```
