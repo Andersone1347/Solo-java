@@ -148,3 +148,135 @@ public class Main
 }
 
 ```
+
+### Вывод всего массива.for
+```
+public class Main {
+
+    public static void main(String[] args) {
+
+        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
+        for (int i = 0; i < 7; i++) {
+            System.out.println(days[i]);
+        }
+    }
+}
+```
+
+### Масив 
+![alt](src/13478.jpg)
+```
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int length = scanner.nextInt();
+        int[] array =  new int[length];
+        for (int i = 0; i < length; i++) {
+            array[i] = scanner.nextInt();
+        }
+        int sum = 0;
+        for (int i=0;i<length;i++){
+            if (array[i]%4==0){
+                sum+=array[i];
+            }
+        }
+        System.out.println(sum);
+    }
+}
+```
+### Геометрический код.
+Пример вводных данных               
+2          
+3         
+4       
+        
+Результат         
+9          
+16    
+ 
+Пояснение            
+В этом примере мы имеем 2 квадрата (первый ввод данных) и их стороны соответственно - 3 и 4 (второй и третий вводы данных). Площадь первого квадрата равна 9 (3*3), второго - 16 (4 *4).       
+```
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int length = scanner.nextInt();
+        int[] sides =  new int[length];
+        for (int i = 0; i < length; i++) {
+            sides[i] = scanner.nextInt();
+            System.out.println(sides[i]*sides[i]);
+        }
+        //введите код сюда
+
+    }
+}
+```
+
+### Массивы в масиве,c выводом всех объектов через for.
+```
+public class Main {
+    public static void main(String[] args) {
+        int[][] matrix = {
+                {8, 1, 6},
+                {3, 5, 7},
+                {4, 9, 0},
+        };
+        //выведите числа
+        for (int i=0; i<matrix.length; i++) {
+
+            for(int j=0; j<matrix.length; j++ ) {
+
+                System.out.println(matrix[i][j]);
+
+            }
+        }
+    }
+}
+```
+
+### Цикл for & if & else c результатом.
+```
+public class Main {
+    public static void main(String[] args) {
+        int result=0;
+        for (int i=0;i<5;i++){
+            if(i==3) {
+                result += 10;
+            } else{
+                result+=i;
+            }
+        }
+        
+        System.out.println(result);
+    }
+}
+```
+
+### То что вводишь наоборот пишет, while 
+```
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        char[] arr = text.toCharArray();
+        int a = arr.length;
+        while (a>0){
+            int i= a - 1;
+            System.out.print(arr[i]);
+            a--;
+        }
+        //введите код сюда
+        ;
+    }
+}
+```
